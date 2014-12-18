@@ -1,0 +1,20 @@
+{
+  "name": "sequence-diagram-generator",
+  "version": "1.0.0",
+  "description": "Small shell wrapper around js-sequence-diagrams JavaScript library",
+  "main": "generate-sequence-diagram.js",
+  "dependencies": {
+    "nightmare": "^1.6.5",
+    "yargs": "^1.3.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "sequence-diagrams",
+    "uml"
+  ],
+  "author": "Srdan Srepfler",
+  "license": "ISC"
+}
