@@ -29,3 +29,9 @@ Edit the sequence-diagrams.html (or make your own) file according to the diagram
 ```sh
 ./generate-sequence-diagram.js -f sequence-diagram.html -o sequence-diagram.png
 ```
+TODO
+=======
+Full lines seem not to be rendered, check with nightmare team or phantom or js-sequence-diagram project
+Make the flow where the template is vanilla text file and then gets injected in the proper place
+npm-ise and publish
+see if libs can be fetched as deps
