@@ -1,7 +1,7 @@
-Nightmare Automation
+Sequence Diagram Generator
 =====================
 
-This project can be used as an illustration what can be achieved with Nightmare.js and it's automation.
+This project can be used to generate sequence diagrams from the command line.
 
 Requirements
 --------------
