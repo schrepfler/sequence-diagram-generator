@@ -1,7 +1,7 @@
 Sequence Diagram Generator
 =====================
 
-This project can be used to generate sequence diagrams from the command line.
+This project can be used to generate sequence diagrams from the command line after defining the diagram with a simple DSL. It's a node wrapper around js-sequence-diagrams, check this page for DSL syntax http://bramp.github.io/js-sequence-diagrams/
 
 Requirements
 --------------
