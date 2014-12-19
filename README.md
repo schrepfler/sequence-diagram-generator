@@ -5,21 +5,20 @@ This project can be used to generate sequence diagrams from the command line.
 
 Requirements
 --------------
-node.js, npm
+node.js, npm, phantomjs
 
 Setting up project
 --------------
 
 Clone project from git repository
 ```sh
-git clone
+git clone https://github.com/schrepfler/sequence-diagram-generator.git
 ```
 
 Fetch dependencies
 ```sh
 npm install
 ```
-
 
 Generating sequence diagrams
 --------------
@@ -31,7 +30,10 @@ Edit the sequence-diagrams.html (or make your own) file according to the diagram
 ```
 TODO
 =======
+
 Full lines seem not to be rendered, check with nightmare team or phantom or js-sequence-diagram project
-Make the flow where the template is vanilla text file and then gets injected in the proper place
+Make the flow where the template is vanilla text file which then gets injected using handlebars in the proper place
 npm-ise and publish
-see if libs can be fetched as deps
+Use handlebars to inject text above and below the diagram.
+See if libs can be fetched as deps
+
