@@ -31,9 +31,9 @@ Edit the sequence-diagrams.html (or make your own) file according to the diagram
 TODO
 =======
 
-Full lines seem not to be rendered, check with nightmare team or phantom or js-sequence-diagram project
-Make the flow where the template is vanilla text file which then gets injected using handlebars in the proper place
-npm-ise and publish
-Use handlebars to inject text above and below the diagram.
-See if libs can be fetched as deps
-
+* Full lines seem not to be rendered, check with nightmare team or phantom or js-sequence-diagram project
+* Start using the diagram object to create the svg rather than drive it from markup.
+* Make the flow where the template is vanilla text file which then gets injected using handlebars in the proper place
+* npm-ise and publish
+* Use handlebars to inject text above and below the diagram.
+* See if libs can be fetched as deps
