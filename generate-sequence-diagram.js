@@ -21,6 +21,7 @@ var sequenceDiagramTemplate = require('./sequenceDiagram.tpl.js');
 var sequenceDiagram;
 var sequenceDiagramCaption = "";
 var sequenceDiagramTheme = "hand";
+var tempFile = ".tmp.html";
 
 fs.readFile(argv.f, 'utf8', function (err, data) {
     if (err) {
@@ -35,7 +36,7 @@ fs.readFile(argv.f, 'utf8', function (err, data) {
     var sequenceDiagramOutput = Handlebars.templates.sequenceDiagram(handlebarsContext);
 
 
-    fs.writeFile("tmp.html", sequenceDiagramOutput, function(err) {
+    fs.writeFile(".tmp.html", sequenceDiagramOutput, function(err) {
         if(err) {
             console.log(err);
         } else {
@@ -46,7 +47,7 @@ fs.readFile(argv.f, 'utf8', function (err, data) {
 
     var makeScreenshot = function(){
         new Nightmare()
-            .goto("tmp.html")
+            .goto(".tmp.html")
             .evaluate(function (page) {
                 return;
             }, function (res) {
