@@ -5,7 +5,7 @@ This project can be used to generate sequence diagrams from the command line aft
 
 Requirements
 --------------
-node.js, npm, phantomjs
+node.js, npm, phantomjs, handlebars
 
 Setting up project
 --------------
