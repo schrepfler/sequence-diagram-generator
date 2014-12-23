@@ -13,6 +13,10 @@
     <title></title>
 </head>
 
+<textarea id="language" rows="10" cols="50" style="display: none">
+    {{{sequenceDiagram}}}
+</textarea>
+
 <div style="font-size:80%; text-align:center; display: inline-block">
     <div id="diagram" style="padding-bottom:0.5em;"></div>
     {{caption}}
@@ -38,7 +42,7 @@
 <script src="sequence-diagram-min.js"></script>
 <script>
     $(document).ready(function () {
-        var diagram = Diagram.parse("{{sequenceDiagram}}").val();
+        var diagram = Diagram.parse($('#language').val());
         diagram.drawSVG('diagram', {theme: '{{theme}}'});
     });
 </script>

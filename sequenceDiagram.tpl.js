@@ -1,0 +1,14 @@
+(function() {
+  var Handlebars              = require('handlebars');
+  var template = Handlebars.template, templates = Handlebars.templates = Handlebars.templates || {};
+templates['sequenceDiagram'] = template({"compiler":[6,">= 2.0.0-beta.1"],"main":function(depth0,helpers,partials,data) {
+  var stack1, helper, functionType="function", helperMissing=helpers.helperMissing, escapeExpression=this.escapeExpression, buffer = "<!DOCTYPE html>\n<!--[if lt IE 7]>\n<html class=\"no-js lt-ie9 lt-ie8 lt-ie7\"> <![endif]-->\n<!--[if IE 7]>\n<html class=\"no-js lt-ie9 lt-ie8\"> <![endif]-->\n<!--[if IE 8]>\n<html class=\"no-js lt-ie9\"> <![endif]-->\n<!--[if gt IE 8]><!-->\n<html class=\"no-js\"> <!--<![endif]-->\n<head>\n    <meta charset=\"utf-8\">\n    <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge,chrome=1\">\n    <title></title>\n</head>\n\n<textarea id=\"language\" rows=\"10\" cols=\"50\" style=\"display: none\">\n    ";
+  stack1 = ((helper = (helper = helpers.sequenceDiagram || (depth0 != null ? depth0.sequenceDiagram : depth0)) != null ? helper : helperMissing),(typeof helper === functionType ? helper.call(depth0, {"name":"sequenceDiagram","hash":{},"data":data}) : helper));
+  if (stack1 != null) { buffer += stack1; }
+  return buffer + "\n</textarea>\n\n<div style=\"font-size:80%; text-align:center; display: inline-block\">\n    <div id=\"diagram\" style=\"padding-bottom:0.5em;\"></div>\n    "
+    + escapeExpression(((helper = (helper = helpers.caption || (depth0 != null ? depth0.caption : depth0)) != null ? helper : helperMissing),(typeof helper === functionType ? helper.call(depth0, {"name":"caption","hash":{},"data":data}) : helper)))
+    + "\n</div>\n\n<!--<script src=\"https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js\"></script>-->\n<script src=\"jquery.min.js\"></script>\n\n<!--script src=\"underscore-min.js\"></script-->\n<script src=\"lodash.min.js\"></script>\n<script src=\"raphael-min.js\"></script>\n<!--script src=\"https://raw.github.com/DmitryBaranovskiy/raphael/master/raphael-min.js\"></script-->\n\n<script src=\"fonts/daniel/daniel_700.font.js\"></script>\n<!--\n<script src=\"../build/grammar.js\"></script>\n<script src=\"../src/diagram.js\"></script>\n<script src=\"../src/jquery-plugin.js\"></script>\n\n<script src=\"../src/sequence-diagram.js\"></script>\n-->\n\n<script src=\"sequence-diagram-min.js\"></script>\n<script>\n    $(document).ready(function () {\n        var diagram = Diagram.parse($('#language').val());\n        diagram.drawSVG('diagram', {theme: '"
+    + escapeExpression(((helper = (helper = helpers.theme || (depth0 != null ? depth0.theme : depth0)) != null ? helper : helperMissing),(typeof helper === functionType ? helper.call(depth0, {"name":"theme","hash":{},"data":data}) : helper)))
+    + "'});\n    });\n</script>\n</body>\n</html>";
+},"useData":true});
+})();

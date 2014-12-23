@@ -31,9 +31,9 @@ Edit the sequence-diagrams.html (or make your own) file according to the diagram
 TODO
 =======
 
+See if we can avoid having to modify the tpl after precompilation.
 Full lines seem not to be rendered, check with nightmare team or phantom or js-sequence-diagram project
-Make the flow where the template is vanilla text file which then gets injected using handlebars in the proper place
 npm-ise and publish
-Use handlebars to inject text above and below the diagram.
+Add proper image caption above and below the image with stylesheet
 See if libs can be fetched as deps
 
