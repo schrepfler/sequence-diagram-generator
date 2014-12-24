@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="description" content="Sequence-diagram-generator : Generate a sequence diagram from a diagram DSL file and output it as a png image with a given name.">
+
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>Sequence-diagram-generator</title>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/schrepfler/sequence-diagram-generator">View on GitHub</a>
+
+          <h1 id="project_title">Sequence-diagram-generator</h1>
+          <h2 id="project_tagline">Generate a sequence diagram from a diagram DSL file and output it as a png image with a given name.</h2>
+
+            <section id="downloads">
+              <a class="zip_download_link" href="https://github.com/schrepfler/sequence-diagram-generator/zipball/master">Download this project as a .zip file</a>
+              <a class="tar_download_link" href="https://github.com/schrepfler/sequence-diagram-generator/tarball/master">Download this project as a tar.gz file</a>
+            </section>
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <h1>
+<a id="sequence-diagram-generator" class="anchor" href="#sequence-diagram-generator" aria-hidden="true"><span class="octicon octicon-link"></span></a>Sequence Diagram Generator</h1>
+
+<p>This project can be used to generate sequence diagrams from the command line after defining the diagram with a simple DSL. It's a node wrapper around js-sequence-diagrams, check this page for DSL syntax <a href="http://bramp.github.io/js-sequence-diagrams/">http://bramp.github.io/js-sequence-diagrams/</a></p>
+
+<h2>
+<a id="requirements" class="anchor" href="#requirements" aria-hidden="true"><span class="octicon octicon-link"></span></a>Requirements</h2>
+
+<p>node.js, npm, phantomjs, handlebars</p>
+
+<h2>
+<a id="setting-up-project" class="anchor" href="#setting-up-project" aria-hidden="true"><span class="octicon octicon-link"></span></a>Setting up project</h2>
+
+<p>Clone project from git repository</p>
+
+<div class="highlight highlight-sh"><pre>git clone https://github.com/schrepfler/sequence-diagram-generator.git</pre></div>
+
+<p>Fetch dependencies</p>
+
+<div class="highlight highlight-sh"><pre>npm install</pre></div>
+
+<h2>
+<a id="generating-sequence-diagrams" class="anchor" href="#generating-sequence-diagrams" aria-hidden="true"><span class="octicon octicon-link"></span></a>Generating sequence diagrams</h2>
+
+<p>Edit the sequence-diagrams.txt (or make your own) file according to the diagram syntax and after running the following command you will find a png with your image.</p>
+
+<div class="highlight highlight-sh"><pre>./generate-sequence-diagram.js -f sequence-diagram.txt -o sequence-diagram.png</pre></div>
+
+<h1>
+<a id="todo" class="anchor" href="#todo" aria-hidden="true"><span class="octicon octicon-link"></span></a>TODO</h1>
+
+<ul>
+<li>See if we can avoid having to modify the tpl after precompilation.</li>
+<li>Full lines seem not to be rendered, check with nightmare team or phantom or js-sequence-diagram project</li>
+<li>npm-ise and publish</li>
+<li>Add proper image caption above and below the image with stylesheet</li>
+<li>See if libs can be fetched as deps</li>
+</ul>
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">Sequence-diagram-generator maintained by <a href="https://github.com/schrepfler">schrepfler</a></p>
+        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+    
+
+  </body>
+</html>
