@@ -1,3 +1,4 @@
+[![Stories in Ready](https://badge.waffle.io/schrepfler/sequence-diagram-generator.png?label=ready&title=Ready)](https://waffle.io/schrepfler/sequence-diagram-generator)
 Sequence Diagram Generator
 =====================
 
