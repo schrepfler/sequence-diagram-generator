@@ -37,4 +37,6 @@ TODO
 * npm-ise and publish
 * Add proper image caption above and below the image with stylesheet
 * See if libs can be fetched as deps
-
+* Tests
+  * On body
+  * On image
