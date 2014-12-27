@@ -1,3 +1,4 @@
+[![Stories in Ready](https://badge.waffle.io/schrepfler/sequence-diagram-generator.png?label=ready&title=Ready)](https://waffle.io/schrepfler/sequence-diagram-generator)
 Sequence Diagram Generator
 =====================
 
@@ -23,10 +24,10 @@ npm install
 Generating sequence diagrams
 --------------
 
-Edit the sequence-diagrams.html (or make your own) file according to the diagram syntax and after running the following command you will find a png with your image.
+Edit the sequence-diagrams.txt (or make your own) file according to the diagram syntax and after running the following command you will find a png with your image.
 
 ```sh
-./generate-sequence-diagram.js -f sequence-diagram.html -o sequence-diagram.png
+./generate-sequence-diagram.js -f sequence-diagram.txt -o sequence-diagram.png
 ```
 TODO
 =======
