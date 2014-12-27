@@ -1,4 +1,4 @@
-[![Stories in Ready](https://badge.waffle.io/schrepfler/sequence-diagram-generator.png?label=ready&title=Ready)](https://waffle.io/schrepfler/sequence-diagram-generator)
+[![Build Status](https://travis-ci.org/schrepfler/sequence-diagram-generator.svg?branch=master)](https://travis-ci.org/schrepfler/sequence-diagram-generator) [![Stories in Ready](https://badge.waffle.io/schrepfler/sequence-diagram-generator.png?label=ready&title=Ready)](https://waffle.io/schrepfler/sequence-diagram-generator)
 Sequence Diagram Generator
 =====================
 
