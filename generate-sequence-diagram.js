@@ -13,7 +13,6 @@ var argv = require('yargs')
     .default('hand')
     .argv;
 
-var rx = require('rx');
 var fs = require('fs');
 var Nightmare = require('nightmare');
 var Handlebars = require('handlebars');
