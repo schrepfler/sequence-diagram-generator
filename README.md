@@ -32,6 +32,11 @@ Edit the sequence-diagrams.txt (or make your own) file according to the diagram 
 TODO
 =======
 
+* Add an API eg.
+```sh
+var generator = require('generate-sequence-diagrams');
+generator.generate('my dsl text', function (data) { // data is the output image });
+```
 * See if we can avoid having to modify the tpl after precompilation.
 * Full lines seem not to be rendered, check with nightmare team or phantom or js-sequence-diagram project
 * npm-ise and publish
