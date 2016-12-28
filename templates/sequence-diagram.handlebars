@@ -22,24 +22,13 @@
     {{caption}}
 </div>
 
-<!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>-->
-<script src="jquery.min.js"></script>
+<link href="bower_components/js-sequence-diagrams/dist/sequence-diagram-min.css" rel="stylesheet" />
+<script src="bower_components/jquery/dist/jquery.min.js"></script>
+<script src="bower_components/bower-webfontloader/webfont.js"></script>
+<script src="bower_components/snap.svg/dist/snap.svg-min.js"></script>
+<script src="bower_components/underscore/underscore-min.js"></script>
+<script src="bower_components/js-sequence-diagrams/dist/sequence-diagram-min.js"></script>
 
-<!--script src="underscore-min.js"></script-->
-<script src="lodash.min.js"></script>
-<script src="raphael-min.js"></script>
-<!--script src="https://raw.github.com/DmitryBaranovskiy/raphael/master/raphael-min.js"></script-->
-
-<script src="fonts/daniel/daniel_700.font.js"></script>
-<!--
-<script src="../build/grammar.js"></script>
-<script src="../src/diagram.js"></script>
-<script src="../src/jquery-plugin.js"></script>
-
-<script src="../src/sequence-diagram.js"></script>
--->
-
-<script src="sequence-diagram-min.js"></script>
 <script>
     $(document).ready(function () {
         var diagram = Diagram.parse($('#language').val());

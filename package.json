@@ -4,14 +4,16 @@
   "description": "Small shell wrapper around js-sequence-diagrams JavaScript library",
   "main": "generate-sequence-diagram.js",
   "dependencies": {
-    "handlebars": "^2.0.0",
-    "nightmare": "^1.6.5",
-    "yargs": "^1.3.3"
+    "handlebars": "^4.0.6",
+    "nightmare": "^2.9.0",
+    "yargs": "^4.0.6"
   },
   "devDependencies": {
-    "mocha": "^2.1.0"
+    "bower": "^1.8.0",
+    "mocha": "^3.2.0"
   },
   "scripts": {
+    "setup": "bower install",
     "test": "mocha test/testrunner.js"
   },
   "keywords": [

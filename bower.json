@@ -1,0 +1,25 @@
+{
+  "name": "sequence-diagram-generator",
+  "description": "Small shell wrapper around js-sequence-diagrams JavaScript library",
+  "main": "generate-sequence-diagram.js",
+  "authors": [
+    "Srdan Srepfler"
+  ],
+  "license": "ISC",
+  "keywords": [
+    "sequence-diagrams",
+    "uml"
+  ],
+  "homepage": "https://github.com/schrepfler/sequence-diagram-generator",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "js-sequence-diagrams": "bramp/js-sequence-diagrams#^2.0.1",
+    "jquery": "^3.1.1"
+  }
+}
