@@ -6,7 +6,7 @@ This project can be used to generate sequence diagrams from the command line aft
 
 Requirements
 --------------
-node.js, npm, phantomjs, handlebars
+node.js, npm, nightmare.js, handlebars.js
 
 Setting up project
 --------------
@@ -18,7 +18,10 @@ git clone https://github.com/schrepfler/sequence-diagram-generator.git
 
 Fetch dependencies
 ```sh
+#install dependencies
 npm install
+#install web dependencies via bower
+npm run setup
 ```
 
 Generating sequence diagrams
