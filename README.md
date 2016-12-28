@@ -40,11 +40,8 @@ TODO
 var generator = require('generate-sequence-diagrams');
 generator.generate('my dsl text', function (data) { // data is the output image });
 ```
-* See if we can avoid having to modify the tpl after precompilation.
-* Full lines seem not to be rendered, check with nightmare team or phantom or js-sequence-diagram project
 * npm-ise and publish
 * Add proper image caption above and below the image with stylesheet
-* See if libs can be fetched as deps
 * Tests
   * On body
   * On image
