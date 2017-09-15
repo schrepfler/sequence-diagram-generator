@@ -5,7 +5,7 @@
   "main": "generate-sequence-diagram.js",
   "dependencies": {
     "handlebars": "^4.0.6",
-    "nightmare": "^2.9.0",
+    "puppeteer": "^0.10.2",
     "yargs": "^4.0.6"
   },
   "devDependencies": {
