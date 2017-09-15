@@ -6,7 +6,7 @@ This project can be used to generate sequence diagrams from the command line aft
 
 Requirements
 --------------
-node.js, npm, nightmare.js, handlebars.js
+node.js, npm, puppeteer, handlebars.js
 
 Setting up project
 --------------
