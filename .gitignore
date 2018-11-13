@@ -1,5 +1,5 @@
 .idea/
 node_modules
 .tmp.html
-out.png
+/*.png
 bower_components/

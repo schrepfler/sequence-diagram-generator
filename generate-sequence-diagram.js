@@ -18,19 +18,17 @@ var argv = require('yargs')
   .argv;
 
 var fs = require('fs');
-// var Nightmare = require('nightmare');
 const puppeteer = require('puppeteer');
 var Handlebars = require('handlebars');
 
-console.log("Reading template " + './templates/sequence-diagram.handlebars');
 var templateSrc = fs.readFileSync('./templates/sequence-diagram.handlebars', 'utf8');
 
 var template = Handlebars.compile(templateSrc);
 
 var sequenceDiagram;
-var sequenceDiagramCaption = "";
 var sequenceDiagramTheme = argv.t;
 var tempFile = ".tmp.html";
+
 const pdfRegex = /pdf$/g;
 const imageRegex = /(png|jpg|jpeg)$/g;
 
@@ -38,22 +36,35 @@ sequenceDiagram = fs.readFileSync(argv.f, 'utf8');
 
 var handlebarsContext = {
   "sequenceDiagram": sequenceDiagram,
-  "caption": sequenceDiagramCaption,
   "theme": sequenceDiagramTheme
 };
 
 var sequenceDiagramOutput = template(handlebarsContext);
 
+fs.writeFileSync(tempFile, sequenceDiagramOutput);
+
 (async() => {
   const browser = await puppeteer.launch();
+
   const page = await browser.newPage();
-  page.setViewport({
-    width: 2000,
-    height: 2000
-  });
+
   await page.goto(`file://${path.resolve('.tmp.html')}`, {
-    waitUntil: 'networkidle'
+    waitUntil: 'networkidle2'
   });
+
+  const executionContext = await page.mainFrame().executionContext()
+  const result = await executionContext.evaluate(
+    () => {
+      var width = Math.ceil($( "#diagram svg" ).width());
+      var height = Math.ceil($( "#diagram svg" ).height());
+
+      return {
+        width, height
+      }
+    }
+  )
+
+  page.setViewport(result);
 
   if(pdfRegex.test(argv.o)){
     await page.pdf({
@@ -66,7 +77,6 @@ var sequenceDiagramOutput = template(handlebarsContext);
   } else {
     console.error(`File format for file ${argv.o} is not supported.`);
   }
-
-
   browser.close();
+
 })();
