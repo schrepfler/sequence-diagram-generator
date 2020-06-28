@@ -4,7 +4,7 @@
   "description": "Small shell wrapper around js-sequence-diagrams JavaScript library",
   "main": "generate-sequence-diagram.js",
   "dependencies": {
-    "handlebars": "^4.0.14",
+    "handlebars": "^4.3.0",
     "puppeteer": "^1.10.0",
     "yargs": "^12.0.2"
   },
