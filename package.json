@@ -6,7 +6,7 @@
   "dependencies": {
     "handlebars": "^4.7.7",
     "puppeteer": "^1.13.0",
-    "yargs": "^12.0.2"
+    "yargs": "^17.7.1"
   },
   "devDependencies": {
     "bower": "^1.8.8",
